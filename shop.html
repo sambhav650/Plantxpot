@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Plant Pots Store</title>
+    <link rel="stylesheet" href="shop1.css">
+    <script defer src="shop2.js"></script>
+</head>
+<body>
+    <header>
+    <h1>Plant Pots Store</h1>
+    
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    
+    <!-- Login & Logout Buttons -->
+    <button id="login-btn">Login</button>
+    <button id="logout-btn" style="display: none;">Logout</button>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" id="cart-icon">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="shop-header">
+        <h2>Shop Our Collection</h2>
+        <p>Find the perfect plant pot for your home or garden.</p>
+    </section>
+
+    <section class="search-filter">
+        <input type="text" id="search-bar" placeholder="Search for plant pots...">
+        <select id="filter-category">
+            <option value="all">All</option>
+            <option value="ceramic">Ceramic</option>
+            <option value="clay">Clay</option>
+            <option value="plastic">Plastic</option>
+        </select>
+    </section>
+
+    <section class="product-list">
+        <div class="product-item" data-category="ceramic">
+            <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/plant/Screenshot_20250202-201000_Chrome.jpg" alt="Ceramic Plant Pot">
+            <h3>Ceramic Plant Pot</h3>
+            <p>$25.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-item" data-category="clay">
+            <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/plant/Screenshot_20250202-201419_Google.jpg" alt="Clay Plant Pot">
+            <h3>Clay Plant Pot</h3>
+            <p>$30.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-item" data-category="plastic">
+            <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/plant/Screenshot_20250202-201729_Amazon.jpg" alt="Plastic Plant Pot">
+            <h3>Plastic Plant Pot</h3>
+            <p>$15.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-item" data-category="ceramic">
+            <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/plant/Screenshot_20250202-202011_Google.jpg" alt="Luxury Ceramic Pot">
+            <h3>Luxury Ceramic Pot</h3>
+            <p>$40.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <div class="pagination">
+        <button id="prev-page">Prev</button>
+        <span id="page-number">1</span>
+        <button id="next-page">Next</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Plant Pots Store. All rights reserved.</p>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>

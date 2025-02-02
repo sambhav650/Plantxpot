@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Pots Store</title>
+    <link rel="stylesheet" href="plant1.css">
+    <script defer src="plant2.js"></script>
+</head>
+<body>
+    
+        <header>
+    <h1>Plant Pots Store</h1>
+    
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    
+    <!-- Login & Logout Buttons -->
+    <button id="login-btn">Login</button>
+    <button id="logout-btn" style="display: none;">Logout</button>
+
+    <nav>
+        <ul>
+            <li><a href="plant.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" id="cart-icon">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Login Modal -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="submit-login">Login</button>
+        <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+    </div>
+</div>
+
+<!-- Registration Modal -->
+<div id="register-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Register</h2>
+        <input type="text" id="new-username" placeholder="Create Username">
+        <input type="password" id="new-password" placeholder="Create Password">
+        <button id="submit-register">Register</button>
+    </div>
+</div>
+
+    <section class="hero">
+        <h2>Beautiful Plant Pots for Your Home</h2>
+        <p>Shop the best selection of plant pots at affordable prices.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </section>
+
+    <section class="search-filter">
+        <input type="text" id="search-bar" placeholder="Search for plant pots...">
+        <select id="filter-category">
+            <option value="all">All</option>
+            <option value="ceramic">Ceramic</option>
+            <option value="clay">Clay</option>
+            <option value="plastic">Plastic</option>
+        </select>
+    </section>
+
+    <section class="product-list">
+        <div class="product-item" data-id="1" data-category="ceramic">
+            <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/plant/Screenshot_20250202-201000_Chrome.jpg" alt="Ceramic Plant Pot">
+            <h2>Ceramic Plant Pot</h2>
+            <p>$25.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-item" data-id="2" data-category="clay">
+            <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/plant/Screenshot_20250202-201419_Google.jpg" alt="Clay Plant Pot">
+            <h2>Clay Plant Pot</h2>
+            <p>$30.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-item" data-id="3" data-category="plastic">
+            <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/plant/Screenshot_20250202-201729_Amazon.jpg" alt="Plastic Plant Pot">
+            <h2>Plastic Plant Pot</h2>
+            <p>$15.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-item" data-id="4" data-category="ceramic">
+            <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/plant/Screenshot_20250202-202011_Google.jpg" alt="Luxury Ceramic Pot">
+            <h2>Luxury Ceramic Pot</h2>
+            <p>$40.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Plant Pots Store. All rights reserved.</p>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+    <section class="add-product">
+    <h2>Add Your Own Product</h2>
+    <input type="text" id="product-name" placeholder="Product Name">
+    <input type="number" id="product-price" placeholder="Price">
+    <input type="file" id="product-image" accept="image/*">
+    <button id="add-product-btn">+</button>
+</section>
+
+<section class="product-list" id="product-list">
+    <!-- Existing Products -->
+</section>
+
+</body>
+</html>

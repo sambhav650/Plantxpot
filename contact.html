@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Plant Pots Store</title>
+    <link rel="stylesheet" href="contact1.css">
+    <script defer src="contact2.js"></script>
+</head>
+<body>
+   <header>
+    <h1>Plant Pots Store</h1>
+    
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    
+    <!-- Login & Logout Buttons -->
+    <button id="login-btn">Login</button>
+    <button id="logout-btn" style="display: none;">Logout</button>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" id="cart-icon">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+</header> 
+
+    <section class="contact-header">
+        <h2>Contact Us</h2>
+        <p>Have questions? We're here to help!</p>
+    </section>
+
+    <section class="contact-info">
+        <div class="info-box">
+            <h3>Customer Support</h3>
+            <p><strong>Email:</strong> support@plantpots.com</p>
+            <p><strong>Phone:</strong> +1 (234) 567-890</p>
+            <p><strong>Address:</strong> 123 Green Street, Garden City, USA</p>
+        </div>
+        <div class="info-box">
+            <h3>Store Hours</h3>
+            <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+            <p><strong>Saturday - Sunday:</strong> 10:00 AM - 4:00 PM</p>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-response" style="display:none; color: green;">Thank you! We'll get back to you soon.</p>
+    </section>
+
+    <section class="map">
+        <h2>Visit Our Store</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345084997!2d144.95373531550496!3d-37.8172097420214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218cee40!2sMelbourne!5e0!3m2!1sen!2sau!4v1633064536959!5m2!1sen!2sau" 
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <section class="social-media">
+        <h2>Follow Us</h2>
+        <a href="#">🌿 Instagram</a>
+        <a href="#">🌿 Facebook</a>
+        <a href="#">🌿 Twitter</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Plant Pots Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
